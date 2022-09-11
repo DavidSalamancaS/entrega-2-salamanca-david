@@ -1,0 +1,21 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Iconos/icon.png" type="Texture" id=1]
+[ext_resource path="res://Jugador.gd" type="Script" id=2]
+[ext_resource path="res://Iconos/icon - copia.png" type="Texture" id=3]
+[ext_resource path="res://canion.gd" type="Script" id=4]
+[ext_resource path="res://balasClase.tscn" type="PackedScene" id=5]
+
+[node name="Jugador" type="Sprite"]
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="canion" type="Sprite" parent="."]
+position = Vector2( -9.53674e-07, -1.90735e-06 )
+scale = Vector2( 0.423077, 0.578125 )
+texture = ExtResource( 3 )
+script = ExtResource( 4 )
+balasEscena = ExtResource( 5 )
+
+[node name="disparar" type="Position2D" parent="canion"]
+position = Vector2( 14.1818, 3.2992e-06 )
